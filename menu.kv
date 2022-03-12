@@ -1,0 +1,45 @@
+<MenuWidget>:
+    canvas.before:
+        Color:
+            rgba: 0,0,0,.7
+        Rectangle:
+            size: self.size
+    Label:
+        text: root.parent.labelText
+        pos_hint: {"center_x" : .5, "center_y" : .6}
+        font_size: dp(50)
+        color: 234/255, 242/255, 248/255
+        font_name: "TRANA___.TTF"
+    Button:
+        text: root.parent.buttonText
+        pos_hint: {"center_x" : .5, "center_y" : .3}
+        size_hint: .2, .1
+        on_press: root.parent.startGame()
+        background_normal: ""
+        font_size: dp(24)
+        background_color: 65/255, 138/255, 220/255,.9
+        color: 234/255, 242/255, 248/255
+        font_name: "TRANA___.TTF"
+
+    Button:
+        text: "<"
+        pos_hint: {"center_x" : .1, "center_y" : .5}
+        size_hint: .05, .09
+        on_press: root.parent.changeBackgroundLeft()
+        background_normal: ""
+        font_size: dp(40)
+        background_color: 100/255, 100/255, 100/255,.75
+        color: 234/255, 242/255, 248/255
+
+    Button:
+        text: ">"
+        pos_hint: {"center_x" : .9, "center_y" : .5}
+        size_hint: .05, .09
+        on_press: root.parent.changeBackgroundRight()
+        background_normal: ""
+        font_size: dp(40)
+        background_color: 100/255, 100/255, 100/255,.75
+        color: 234/255, 242/255, 248/255
+
+
+

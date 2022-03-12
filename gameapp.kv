@@ -1,0 +1,26 @@
+#:import Menu Menu
+MainWidget:
+<MainWidget>:
+
+
+    menu_widget: menu_widget
+
+    x_p: root.width/2
+    y_p: root.height*0.75
+    MenuWidget:
+        id: menu_widget
+
+    Label:
+        text: "Score - "+root.score
+        color: 1,1,1
+        size_hint: .2,.2
+        font_size: dp(25)
+        pos_hint: {"x":0, "top":1}
+        font_name: "TRANA___.TTF"
+    Label:
+        text: "High Score - "+root.highScore
+        color: 1,1,1
+        size_hint: .2,.2
+        font_size: dp(25)
+        pos_hint: {"x":0.73, "top":1}
+        font_name: "TRANA___.TTF"
